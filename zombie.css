@@ -1,0 +1,210 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    height: 100vh;
+    width: 100vw;
+    color:rgb(82, 73, 73);
+    overflow: hidden;
+    background-image: url("background/wp10001765-horror-home-wallpapers.jpg");
+    background-size: cover;
+}
+#ladder{
+    position: absolute;
+    left:-20px;
+    z-index: -3;
+}
+.tank{
+    height: 155px;
+    width: 150px;
+    position:absolute;
+    z-index: 3;
+    left:-10px;
+    transform:scaleX(-1) rotate(2deg);
+    border-radius: 5px;
+    z-index: -1;
+    transition:all .3s ease;
+}
+.forBullets{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+}
+.bullet{
+    height:60px;
+    width: 60px;
+    position: absolute;
+    z-index: 2;
+    filter:brightness(3);
+}
+.floor{
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(0deg,black,rgb(109, 10, 10));
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.068),rgb(8, 8, 122));
+    position:absolute;
+    border-radius: 5px;
+    z-index: 1;
+}
+.floor1{
+    width: 1400px;
+    left:100px; 
+    top:150px;
+}
+.floor2{
+    width: 800px; 
+    left:700px; 
+    top:320px;
+}
+.floor3{
+    width:1500px;
+    top:650px;
+    left:-5px;
+}
+.floor4{
+    width:1000px;
+    left:500px;
+    top:470px;
+}
+#zombie{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.zombies{
+    height: 130px;
+    width: 80px;
+    background-size:cover;
+    z-index: -2;
+}
+
+/* ======================= Gameover =================== */
+
+.gameover{
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.459);
+    z-index:4;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.89);
+}
+.gameoverBox{
+    height: 350px;
+    width: 600px;
+    margin: auto;
+    position: relative;
+    border-radius:10px;
+    background-image: url("/background/wp4411459-zombie-army-4-game-wallpapers.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color:rgb(233, 226, 226);
+    text-shadow: 4px 4px 5px black;
+    font-family: arial;
+    font-weight: bold;
+    transition: transform .5s ease;
+    transform: translateY(-400px);
+}
+.result{
+    font-size: 4rem;
+    color:rgb(204, 122, 14);
+    position: relative;
+    transition:all .5s ease;
+}
+.what{
+    color:rgb(172, 27, 17);
+}
+.buttons{
+    width:100%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttons button{
+    height: 100%;
+    width:30%;
+    outline: none;
+    border:none;
+    font-size:2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    color:rgba(255, 255, 255, 0.712);
+    text-shadow: 4px 4px 5px black;
+    cursor:pointer;
+    position: relative;
+    transition:all ease-in;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.781);
+}
+.buttons .restart{
+    background: rgba(6, 6, 54, 0.945);
+}
+.buttons .close{
+    background:rgb(126, 74, 7);
+}
+.buttons .restart:hover{
+    background: rgba(11, 11, 65, 0.945);
+    color:rgba(255, 255, 255, 0.815);
+    
+}
+.buttons .close:hover{
+    background:rgb(148, 88, 10);
+    color:rgba(255, 255, 255, 0.815);
+}
+/* ============ header ============== */
+.header{
+    width:100%;
+    height:120px;
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+}
+.header div{
+    height: 100%;
+    width: 200px;
+    background: rgba(13, 60, 129, 0.253);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px rgba(3, 22, 58, 0.445);
+    margin:1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight:bold;
+    line-height:120px;
+    color:rgba(255, 255, 255, 0.801);
+    font-family: arial;
+}
+.header div:nth-child(2){
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.skull{
+    height: 125px;
+}
+.header .numbers{
+    font-size: 7rem;
+    color:rgb(202, 20, 20);
+}
+.header .zombieKilled{
+    font-size:5rem;
+    color:rgb(202, 20, 20);
+}
+
+#zombie{
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    z-index: -1;
+}
+
+
+
+
+
+
